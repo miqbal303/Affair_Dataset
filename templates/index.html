@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Affair Analysis</title>
+</head>
+<body>
+    <h1>Affair Analysis</h1>
+    <form method="POST">
+        <label for="rate_marriage">Rate Marriage:</label>
+        <input type="text" name="rate_marriage" required><br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" required><br>
+
+        <label for="yrs_married">Years Married:</label>
+        <input type="text" name="yrs_married" required><br>
+
+        <label for="children">Children:</label>
+        <input type="text" name="children" required><br>
+
+        <label for="religious">Religious:</label>
+        <input type="text" name="religious" required><br>
+
+        <label for="educ">Education:</label>
+        <input type="text" name="educ" required><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" name="occupation" required><br>
+
+        <label for="occupation_husb">Husband's Occupation:</label>
+        <input type="text" name="occupation_husb" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if prediction == 1 %}
+    <p><h1>You have had an affair.</h1>></p>
+    {% elif prediction == 0 %}
+    <p><h1>You have not had an affair.</h1></p>
+    {% endif %}
+</body>
+</html>
